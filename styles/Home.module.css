@@ -1,61 +1,91 @@
 
 .container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #6A1B09, #E26A2C);
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  background: linear-gradient(to bottom, #4e1c00, #8f3900);
-  min-height: 100vh;
-  padding: 2rem;
-  color: #f5e8d2;
-  font-family: 'Georgia', serif;
-}
-
-.navbar {
-  display: flex;
   justify-content: center;
-  gap: 2rem;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-family: 'Georgia', serif;
+  color: #FBEED9;
+  padding: 2rem;
+  text-align: center;
 }
 
-.logo img {
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.nav a {
+  color: #FBEED9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
   width: 100px;
-  margin-bottom: 1rem;
+  height: auto;
+  margin-bottom: 1.5rem;
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: bold;
+  margin: 1rem 0;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  margin: 0.5rem 0 1.5rem 0;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
 }
 
-.viewButton {
-  background-color: #3e3e1d;
+.viewBtn {
+  background-color: #4B4C1D;
   color: white;
+  padding: 0.8rem 2rem;
   border: none;
-  padding: 0.7rem 2rem;
-  margin-bottom: 2rem;
-  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 .buttons {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.option {
-  background-color: #a13b00;
-  color: #f5e8d2;
+.btnEurope, .btnWorld {
+  background-color: #C14D00;
+  color: #FBEED9;
   border: none;
   padding: 1rem 2rem;
-  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
 }
