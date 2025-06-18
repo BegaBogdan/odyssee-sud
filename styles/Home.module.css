@@ -1,4 +1,67 @@
-h1 {
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #f5e8d4;
+  font-size: 1.1rem;
+}
+
+.main {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #f5e8d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #2c3e50;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: #4c5129;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #888;
 }
