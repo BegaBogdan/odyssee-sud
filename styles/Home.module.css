@@ -1,30 +1,10 @@
-
 .container {
+  background: linear-gradient(to bottom, #5b1a00, #d85600);
   min-height: 100vh;
-  background: linear-gradient(to bottom, #6A1B09, #E26A2C);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Georgia', serif;
-  color: #FBEED9;
-  padding: 2rem;
+  color: #f8f4e3;
+  font-family: 'Playfair Display', serif;
   text-align: center;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 500px;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-}
-
-.nav a {
-  color: #FBEED9;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 2rem 1rem;
 }
 
 .header {
@@ -33,33 +13,37 @@
   align-items: center;
 }
 
-.logo {
-  width: 100px;
-  height: auto;
+.nav {
+  display: flex;
+  gap: 2rem;
   margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: #f8f4e3;
+  text-decoration: none;
 }
 
 .title {
   font-size: 2.5rem;
-  font-weight: bold;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
 .subtitle {
   font-size: 1.1rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
+  margin: 1rem 0 2rem;
+  color: #f3eacb;
 }
 
-.viewBtn {
-  background-color: #4B4C1D;
-  color: white;
-  padding: 0.8rem 2rem;
+.cta {
+  background-color: #3c3f1b;
+  color: #fff;
+  padding: 0.7rem 2rem;
   border: none;
-  border-radius: 6px;
   font-weight: bold;
-  cursor: pointer;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .buttons {
@@ -69,23 +53,13 @@
   justify-content: center;
 }
 
-.btnEurope, .btnWorld {
-  background-color: #C14D00;
-  color: #FBEED9;
+.orange {
+  background-color: #c14c14;
   border: none;
-  padding: 1rem 2rem;
+  color: #fff;
   font-weight: bold;
-  font-family: 'Georgia', serif;
+  padding: 1rem 2rem;
   font-size: 1rem;
-  border-radius: 5px;
   cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .title {
-    font-size: 2rem;
-  }
-  .subtitle {
-    font-size: 1rem;
-  }
+  border-radius: 6px;
 }
