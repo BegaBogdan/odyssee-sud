@@ -1,0 +1,84 @@
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(to bottom, #5b1a00, #d85600);
+  color: #f9f4e9;
+  text-align: center;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.top-nav nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.top-nav nav a {
+  text-decoration: none;
+  color: #f9f4e9;
+  font-weight: bold;
+}
+
+.logo {
+  margin-top: 1rem;
+  width: 100px;
+  height: auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  background-color: #3c3f1b;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.orange-btn {
+  background-color: #B14200;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
